@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games for You!</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header center">
+      <h1 class="heading">Добро пожаловать на мой сайт !</h1>
+      <p class="underheading">
+        Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+        <span class="underheading--bold">поехали</span> и
+        <span class="underheading--bold">приступай</span>
+      </p>
+      <a href="#games" class="button button--header">Поехали!</a>
+    </header>
+    <section class="game_box center" id="games">
+      <a href="#game_1" class="game game--1">
+        <p class="game__name">Времена года</p>
+      </a>
+      <a href="#game_2" class="game game--2">
+        <p class="game__name">Запомни слова</p>
+      </a>
+      <a href="#game_3" class="game game--3">
+        <p class="game__name">Игра в загадки</p>
+      </a>
+    </section>
+    <section class="intro center intro--1" id="game_1">
+      <div class="intro__txt">
+        <h2 class="intro__name">Времена года</h2>
+        <p class="intro__desc">
+          Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете
+          к какому времени года он относится
+        </p>
+        <button onclick="season()" class="button">Играть!</button>
+      </div>
+      <div class="intro__img-box">
+        <img class="intro__img" src="img/game_1.svg" alt="Первая игра" />
+      </div>
+    </section>
+    <section class="intro center intro--2" id="game_2">
+      <div class="intro__txt">
+        <h2 class="intro__name">Запомни слова</h2>
+        <p class="intro__desc">
+          При нажатии на кнопку играть, вы увидите несколько слов, которые вам
+          необходимо запомнить.
+        </p>
+        <button onclick="wordCheck()" class="button">Играть!</button>
+      </div>
+      <div class="intro__img-box">
+        <img class="intro__img" src="img/game_2.svg" alt="Первая игра" />
+      </div>
+    </section>
+    <section class="intro center intro--3" id="game_3">
+      <div class="intro__txt">
+        <h2 class="intro__name">Игра в загадки</h2>
+        <p class="intro__desc">
+          Компьютер загадывает загадку, вам необходимо ее угадать, если вы
+          дадите не правильный ответ, то компьютер даст вам подсказку. У вас
+          будет три попытки и две подсказки.
+        </p>
+        <button class="button">Играть!</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <h3 class="footer__rights">Все права защищены</h3>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
